@@ -2,7 +2,7 @@
 
 NestJS documentation website: https://docs.nestjs.com
 
-## 🚀 Goal
+## 📝 Goal
 
 The goal of this TP is create a simple Rest API exposing the Bookshelf implemented in TP1.
 The API will have the following routes:
@@ -47,10 +47,11 @@ Delete a book with its name:
  
 ---
 
-To guide you and help you find out if everything is ✅ a test suite is available in `./Bookshelf.test.ts`.
-These tests can be ran using Jest in command line or inside your IDE.
+To guide you and help you find out if everything is ✅: 
+ - a test suite is available in `./Bookshelf.test.ts`. These tests can be ran using Jest in command line or inside your IDE.
+ - a Postman collection is available in this project directory (BookShelf.postman_collection.json). Import it in Postman to easily execute some requests.
 
-## Getting Started
+## 🚀 Getting Started
 
 Open a terminal, go to the directory of this TP and run the following commands:
 
@@ -75,7 +76,7 @@ npm run start:dev
 
 That's it! You can code!
 
-## Extra:
+## 🛰 Extra
 
 - Add an endpoint to search a book based on a part of the title/the author:
    - Method: POST
