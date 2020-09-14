@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { Bookshelf } from './Bookshelf';
 import { Book } from './Book';
+import { Search } from 'Search';
 @Injectable()
 export class BookService {
   OurBookshelf = new Bookshelf();
@@ -38,5 +39,8 @@ export class BookService {
   }
   deleteBook(bookName: string): void {
     return this.OurBookshelf.deleteBook(bookName);
+  }
+  search(searchParams: Search): Book[] {
+    return this.OurBookshelf.search(searchParams.term);
   }
 }

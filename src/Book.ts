@@ -1,5 +1,16 @@
-export interface Book {
+// export interface Book {
+//   title: string;
+//   author: string;
+//   date: Date;
+// }
+
+import { IsString, IsDate } from 'class-validator';
+
+export class Book {
+  @IsString()
   title: string;
+  @IsString()
   author: string;
-  date: Date;
+  @IsString()
+  date: string;
 }

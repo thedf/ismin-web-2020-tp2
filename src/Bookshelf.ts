@@ -15,6 +15,13 @@ export class Bookshelf {
       this.ListOfBooks.push(book);
     }
   }
+  search(searchParams: string): Book[] {
+    return this.ListOfBooks.filter((book: Book) => {
+      return (
+        book.title.includes(searchParams) || book.author.includes(searchParams)
+      );
+    });
+  }
   getBook(name: string): Book {
     const BooksWithName: Array<Book> = this.ListOfBooks.filter(
       (value: Book) => {
